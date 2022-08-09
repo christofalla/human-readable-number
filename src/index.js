@@ -64,6 +64,50 @@ module.exports = function toReadable (number) {
       } else if (number[number.length - 3] == 9) {
         number1 = "nine";
       }
+
+      if (number.length == 2) {
+        if (number[0] + number[1] == 10) {
+            return `ten`;
+        } else if (number[0] + number[1] == 11) {
+            return `eleven`;
+        } else if (number[0] + number[1] == 12) {
+            return `twelve`;
+        } else if (number[0] + number[1] == 13) {
+            return `thirteen`;
+        } else if (number[0] + number[1] == 14) {
+            return `fourteen`;
+        } else if (number[0] + number[1] == 15) {
+            return `fifteen`;
+        } else if (number[0] + number[1] == 16) {
+            return `sixteen`;
+        } else if (number[0] + number[1] == 17) {
+            return `seventeen`;
+        } else if (number[0] + number[1] == 18) {
+            return `eighteen`;
+        } else if (number[0] + number[1] == 19) {
+            return `nineteen`;
+        } else if (number[0] + number[1] == 20) {
+            return `twenty`;
+        } else if (number[0] + number[1] == 30) {
+            return `thirty`;
+        } else if (number[0] + number[1] == 40) {
+            return `forty`;
+        } else if (number[0] + number[1] == 50) {
+            return `fifty`;
+        } else if (number[0] + number[1] == 60) {
+            return `sixty`;
+        } else if (number[0] + number[1] == 70) {
+            return `seventy`;
+        } else if (number[0] + number[1] == 80) {
+            return `eighty`;
+        } else if (number[0] + number[1] == 90) {
+            return `ninety`;
+        } else {
+            return `${number2}` + ` ${number3}`;
+        }
+    } else if (number.length == 1) {
+        return number3;
+    } else
       if (number.length == 3) {
           if (number[1] == 0 && number[2] == 0) {
               return number1 + ` hundred`;
